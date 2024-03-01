@@ -1,5 +1,6 @@
 
-function App() {
+
+const App = () => {
 
   return (
     <>
