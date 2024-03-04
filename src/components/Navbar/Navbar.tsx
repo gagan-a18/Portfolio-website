@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { styles } from "../../styles"
-import { Key, useState } from "react"
+import { useState } from "react"
 import { logo_2, menu, close } from "../../assets"
 import { navLinks } from "../../constants"
 export const Navbar = () => {
