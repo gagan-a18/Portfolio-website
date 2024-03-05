@@ -32,10 +32,10 @@ export const Navbar = () => {
                 </ul>
                 <div className="sm:hidden flex flex-1 justify-end items-center" >
                     <img src={toggle ? close : menu} alt="menu" className="w-[28px] h-[28px] cursor-pointer" onClick={() => setToggle(!toggle)} />
-                    <div className={`${!toggle ? "hidden" : "flex"} border border-black p-2 justify-center absolute top-[90px] right-0 mx-2 my-2 min-w-[140px] z-10`} >
+                    <div className={`${!toggle ? "hidden" : "flex"} rounded-xl bg-violet-400 border border-black p-2 justify-center absolute top-[90px] right-0 mx-2 my-2 min-w-[140px] z-10`} >
                         <ul className="list-none flex flex-col gap-2" >
                             {navLinks.map((link: { id: string, title: string }) => (
-                                <li key={link.id} className={`${active === link.title ? "text-amber-300" : "text-black"} my-1`} onClick={() => { setactive(link.title); setToggle(!toggle) }} >
+                                <li key={link.id} className={`${active === link.title ? "text-white" : "text-black"} my-1`} onClick={() => { setactive(link.title); setToggle(!toggle) }} >
                                     <Link to={`/portfolio-website/${link.title}`}>{link.title}</Link>
                                 </li>
                             ))}
