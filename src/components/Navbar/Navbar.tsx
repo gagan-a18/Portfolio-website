@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import { styles } from "../../styles"
 import { useState } from "react"
-import { logo_2, menu, close } from "../../assets"
+import { logo_3, menu, close } from "../../assets"
 import { navLinks } from "../../constants"
 export const Navbar = () => {
 
@@ -19,12 +19,12 @@ export const Navbar = () => {
                         window.scrollTo(0, 0);
                     }}
                 >
-                    <img src={logo_2} alt="logo" className="w-14 h-14 object-contain" />
-                    <p className="sm:block hidden" >Gagan</p>
+                    <img src={logo_3} alt="logo" className="w-14 h-14 object-contain" />
+                    <p className="sm:block hidden text-2xl" >Gagan</p>
                 </Link>
                 <ul className="list-none hidden sm:flex flex-row gap-10" >
                     {navLinks.map((link: { id: string, title: string }) => (
-                        <li key={link.id} className={`${active === link.title ? "text-amber-300" : "text-white"} `}
+                        <li key={link.id} className={`${active === link.title ? "text-white" : "text-[#915eff]"} `}
                             onClick={() => setactive(link.title)}>
                             <Link to={`/portfolio-website/${link.id}`}>{link.title}</Link>
                         </li>
