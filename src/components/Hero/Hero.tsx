@@ -1,5 +1,3 @@
-
-import { linkedin, github, Gmail } from "../../assets"
 import { styles } from "../../styles"
 import { ReactTyped } from "react-typed";
 import { SocialIcons } from "../SocialIcons/SocialIcons";
