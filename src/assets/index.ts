@@ -1,5 +1,7 @@
 
 import logo_3 from "./logo_3.svg";
+import linkedin from "./linkedin.svg";
+import Gmail from "./Gmail_Logo.svg"
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -34,6 +36,8 @@ import tripguide from "./tripguide.png";
 export {
 
   logo_3,
+  linkedin,
+  Gmail,
   backend,
   creator,
   mobile,

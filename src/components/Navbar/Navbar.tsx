@@ -20,9 +20,9 @@ export const Navbar = () => {
                     }}
                 >
                     <img src={logo_3} alt="logo" className="w-14 h-14 object-contain" />
-                    <p className="sm:block hidden text-2xl" >Gagan</p>
+                    <p className="sm:block text-2xl" >Gagan</p>
                 </Link>
-                <ul className="list-none hidden sm:flex flex-row gap-10" >
+                <ul className="list-none hidden sm:flex flex-row gap-10 text-lg" >
                     {navLinks.map((link: { id: string, title: string }) => (
                         <li key={link.id} className={`${active === link.title ? "text-white" : "text-[#915eff]"} `}
                             onClick={() => setactive(link.title)}>
