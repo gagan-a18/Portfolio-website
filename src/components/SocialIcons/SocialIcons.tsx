@@ -9,7 +9,7 @@ export const SocialIcons = () => {
     return (
         <>
             {social_icon.map((social, id) => (
-                <div key={id} className={` ${social === Gmail ? 'sm:w-20 sm:h-20 w-14 h-14 ml-4 mt-3' : 'sm:w-20 sm:h-20 w-14 h-14'}`}>
+                <div key={id} className={` ${social === Gmail ? 'sm:w-20 sm:h-20 w-14 h-14 sm:ml-4 ml-3 sm:mt-3 mt-2' : 'sm:w-20 sm:h-20 w-14 h-14'}`}>
                     <a href={` ${social === linkedin ? "https://www.linkedin.com/in/gagan-a-99877324b" : social === github ? "https://github.com/gagan-a18" : "mailto:gagangowda4646@gmail.com"}`} target={`${social != Gmail ? "_blank" : ""}`} >
                         <img src={social} className="cursor-pointer" />
                     </a>
