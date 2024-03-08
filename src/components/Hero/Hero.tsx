@@ -2,12 +2,14 @@ import { styles } from "../../styles"
 import { ReactTyped } from "react-typed";
 import { SocialIcons } from "../SocialIcons/SocialIcons";
 import EarthCanvas from "../EarthCanvas/EarthCanvas";
+import { motion } from "framer-motion";
+import Scroller from "../Scroller/Scroller";
 
 export const Hero = () => {
 
 
     return (
-        <section className="relative h-screen w-full">
+        <section className="relative h-auto w-full">
             <div className={`${styles.paddingX} sm:mt-14 mt-10 max-w-7xl mx-auto flex flex-row items-start gap-5`} >
                 <div className="flex flex-col justify-center items-center mt-5" >
                     <div className="w-5 h-5 rounded-full bg-[#915eff]" />
@@ -28,13 +30,17 @@ export const Hero = () => {
                             </div>
                         </div>
 
-                        <div className="overflow-hidden mt-7 lg:w-9/12 w-8/12 lg:h-[50vh] h-[40vh]" >
+                        <div className="overflow-hidden mt-7 lg:w-9/12 w-8/12 xl:h-[50vh] h-[40vh]" >
                             <EarthCanvas />
                         </div>
                     </div>
                 </div>
             </div>
-
+            <div className="md:flex hidden w-2/12 mx-auto justify-center">
+                <a href="#about">
+                    <Scroller />
+                </a>
+            </div>
         </section>
 
     )
