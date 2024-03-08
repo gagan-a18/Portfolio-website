@@ -29,7 +29,7 @@ export const Hero = () => {
                             </div>
                         </div>
 
-                        <div className="overflow-hidden mt-7 lg:w-9/12 w-8/12 xl:h-[50vh] h-[25vh] xs:h-[40vh]" >
+                        <div className="overflow-hidden mt-7 lg:w-9/12 w-8/12 xl:h-[50vh] h-[30vh] xs:h-[40vh]" >
                             <EarthCanvas />
                         </div>
                     </div>
@@ -44,3 +44,4 @@ export const Hero = () => {
 
     )
 }
+30
