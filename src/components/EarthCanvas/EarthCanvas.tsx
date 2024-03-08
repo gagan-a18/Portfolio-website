@@ -1,6 +1,7 @@
 import { OrbitControls, useGLTF} from "@react-three/drei"
 import { Canvas } from "@react-three/fiber"
 import { Suspense } from "react"
+import CanvasLoader from "../CanvasLoader/CanvasLoader";
 
 const Earth = () => {
     const earth = useGLTF("./planet/scene.gltf");
@@ -20,7 +21,7 @@ const EarthCanvas = () => {
                 position: [20, 3, 5]
             }}
         >
-            <Suspense>
+            <Suspense fallback={<CanvasLoader />}>
                 <OrbitControls
                     autoRotate
                     enableZoom={false}
