@@ -2,7 +2,6 @@ import { styles } from "../../styles"
 import { ReactTyped } from "react-typed";
 import { SocialIcons } from "../SocialIcons/SocialIcons";
 import EarthCanvas from "../EarthCanvas/EarthCanvas";
-import { motion } from "framer-motion";
 import Scroller from "../Scroller/Scroller";
 
 export const Hero = () => {
