@@ -9,8 +9,7 @@ import SectionWrapper from "../../Wrapper/SectionWrapper";
 const About = () => {
     return (
         <React.Fragment>
-            <motion.div variants={textVariant(1)} >
-                <p className={styles.sectionSubText} >Introduction</p>
+            <motion.div variants={textVariant(1)}>
                 <h1 className={styles.sectionHeadText} >Overview.</h1>
             </motion.div>
 
