@@ -1,7 +1,6 @@
 import { motion } from "framer-motion"
 import { ReactNode } from "react"
 import { styles } from "../styles";
-import { staggerContainer } from "../utils/motion";
 
 
 const SectionWrapper = (Component: ReactNode, name: string) =>
