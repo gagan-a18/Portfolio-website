@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 
 export default function Scroller() {
     return (
-        <a href="#about">
             <div className="w-[34px] h-[64px] rounded-3xl border-4 border-violet-500 flex p-2" >
                 <motion.div
                     animate={{
@@ -17,6 +16,5 @@ export default function Scroller() {
                     className="w-3 h-3 rounded-full bg-secondary-50 mb-1"
                 />
             </div>
-        </a>
     )
 }
