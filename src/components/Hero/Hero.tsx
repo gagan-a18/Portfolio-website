@@ -29,13 +29,13 @@ export const Hero = () => {
                             </div>
                         </div>
 
-                        <div className="overflow-hidden mt-7 lg:w-9/12 w-8/12 xl:h-[50vh] h-[23vh] sm:h-[40vh]" >
+                        <div className="overflow-hidden mt-7 lg:w-9/12 w-8/12 xl:h-[50vh] h-[30vh] sm:h-[40vh]" >
                             <EarthCanvas />
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="md:flex hidden w-2/12 mx-auto justify-center">
+            <div className="md:flex sm:mt-0 mt-4 w-2/12 mx-auto justify-center">
                 <a href="#about">
                     <Scroller />
                 </a>
