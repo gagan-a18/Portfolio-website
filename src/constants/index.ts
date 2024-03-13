@@ -8,10 +8,7 @@ import {
     reactjs,
     redux,
     tailwind,
-    nodejs,
-    mongodb,
     git,
-    figma,
     docker,
     meta,
     starbucks,
@@ -20,7 +17,6 @@ import {
     carrent,
     jobit,
     tripguide,
-    threejs,
 } from "../assets";
 
 export const navLinks = [
@@ -75,24 +71,8 @@ const technologies = [
         icon: tailwind,
     },
     {
-        name: "Node JS",
-        icon: nodejs,
-    },
-    {
-        name: "MongoDB",
-        icon: mongodb,
-    },
-    {
-        name: "Three JS",
-        icon: threejs,
-    },
-    {
         name: "git",
         icon: git,
-    },
-    {
-        name: "figma",
-        icon: figma,
     },
     {
         name: "docker",
