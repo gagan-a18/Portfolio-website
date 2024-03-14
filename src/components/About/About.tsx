@@ -21,7 +21,7 @@ const About = () => {
                         Proficient in server management using Nginx and containerization with Docker, I ensure seamless deployment and scalability.
                         As a team worker and collaborator, I thrive in collaborative environments, bringing enthusiasm and dedication to every project.
                     </motion.p>
-                    <div className="mt-10 flex flex-wrap gap-10" >
+                    <div className="mt-10 flex flex-wrap gap-10 justify-center sm:justify-normal" >
                         {services.map((service, index) => (
                             <ServiceCard key={service.title} index={index} title={service.title} icon={service.icon} />
                         ))}
