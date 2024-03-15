@@ -27,11 +27,11 @@ const About = () => {
                         ))}
                     </div>
                 </div>
-                <motion.div className="z-3 mt-10 xl:mt-0 w-full ml-5" >
+                <motion.div className="z-3 mt-10 xl:mt-0 w-full ml-5" variants={textVariant(2)} >
                     <TechSkills />
                 </motion.div>
             </div>
-        </React.Fragment>
+        </React.Fragment >
     )
 }
 export default SectionWrapper(About(), "about");
