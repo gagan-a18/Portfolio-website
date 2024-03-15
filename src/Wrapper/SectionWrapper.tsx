@@ -7,9 +7,9 @@ const SectionWrapper = (Component: ReactNode, name: string) =>
   function HOC() {
     return (
       
-      <motion.section initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.25 }} className={`${styles.paddingX} max-w-7xl mx-auto relative z-0`} >
-        <span className="hash-span" id={name}> &nbsp;</span>
+      <motion.section initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.25 }} className={`${styles.paddingX} max-w-7xl mx-auto relative`} >
         {Component}
+        <span className="hash-span" id={name}> &nbsp;</span>
       </motion.section>
       
     );
