@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function Scroller() {
     return (
-            <div className="w-[34px] h-[64px] rounded-3xl border-4 border-violet-500 flex p-2" >
+            <div className="w-[34px] h-[64px] rounded-3xl border-4 border-violet-500 flex p-2 relative z-10" >
                 <motion.div
                     animate={{
                         y: [0, 24, 0]
