@@ -65,7 +65,7 @@ const Experience = () => {
                     Work Experience.
                 </h2>
             </motion.div>
-
+            <span className="hash-span -z-10" id="Work"> &nbsp;</span>
             <div className='flex flex-col'>
                 <VerticalTimeline>
                     {experiences.map((experience, index) => (
@@ -80,4 +80,4 @@ const Experience = () => {
     );
 };
 
-export default SectionWrapper(Experience(), "work");
+export default SectionWrapper(Experience());

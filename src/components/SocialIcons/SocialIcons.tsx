@@ -1,17 +1,16 @@
-import { linkedin, github, Gmail } from "../../assets"
+import { sociallinks } from "../../constants";
 
 
 export const SocialIcons = () => {
 
-    const social_icon = [linkedin, github, Gmail];
 
 
     return (
         <>
-            {social_icon.map((social, id) => (
-                <div key={id} className={` ${social === Gmail ? 'sm:w-20 sm:h-20 w-14 h-14 sm:ml-4 ml-3 sm:mt-3 mt-2' : 'sm:w-20 sm:h-20 w-14 h-14'}`}>
-                    <a href={` ${social === linkedin ? "https://www.linkedin.com/in/gagan-a-99877324b" : social === github ? "https://github.com/gagan-a18" : "mailto:gagangowda4646@gmail.com"}`} target={`${social != Gmail ? "_blank" : ""}`} >
-                        <img src={social} className="cursor-pointer" />
+            {sociallinks.map((social, index) => (
+                <div key={index} className={`${social.title === "gmail" ? `sm:w-20 sm:h-20 w-14 h-14 sm:ml-4 ml-3 sm:mt-2 mt-2` : `sm:w-20 sm:h-20 w-14 h-14`}`} >
+                    <a href={social.link} target={`${social.title === "gmail" ? "" : "_blank"}`}>
+                        <img src={social.icon} alt={social.title} />
                     </a>
                 </div>
             ))}

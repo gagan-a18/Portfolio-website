@@ -36,7 +36,7 @@ export const Hero = () => {
                 </div>
             </div>
             <div className="md:flex sm:mt-0 mt-4 w-2/12 mx-auto justify-center">
-                <a href="#about">
+                <a href="#About">
                     <Scroller />
                 </a>
             </div>

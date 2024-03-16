@@ -26,7 +26,7 @@ export const Navbar = () => {
                     {navLinks.map((link: { id: string, title: string }) => (
                         <li key={link.id} className={`${active === link.title ? "text-white" : "text-[#915eff]"} `}
                             onClick={() => setactive(link.title)}>
-                            <Link to={`/portfolio-website/${link.id}`}>{link.title}</Link>
+                            <a href={`#${link.title}`}>{link.title}</a>
                         </li>
                     ))}
                 </ul>
