@@ -12,6 +12,9 @@ import {
     docker,
     pluto7,
     microland,
+    linkedin,
+    github,
+    Gmail,
 } from "../assets";
 
 export const navLinks = [
@@ -101,6 +104,24 @@ const experiences = [
     },
 ];
 
+const sociallinks = [
+    {
+        title: "linkedin",
+        link: "https://www.linkedin.com/in/gagan-a-99877324b",
+        icon: linkedin
+    },
+    {
+        title: "github",
+        link: "https://github.com/gagan-a18",
+        icon: github
+    },
+    {
+        title: "gmail",
+        link: "mailto:gagangowda4646@gmail.com",
+        icon: Gmail
+    },
+]
 
 
-export { services, technologies, experiences };
+
+export { services, technologies, experiences, sociallinks };

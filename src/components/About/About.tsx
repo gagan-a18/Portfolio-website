@@ -27,11 +27,12 @@ const About = () => {
                         ))}
                     </div>
                 </div>
-                <motion.div className="z-3 mt-10 xl:mt-0 w-full ml-5" variants={textVariant(2)} >
+                <span className="hash-span -z-10" id="About"> &nbsp;</span>
+                <motion.div className="z-3 mt-10 xl:mt-0 w-full ml-5" variants={textVariant(1.5)} >
                     <TechSkills />
                 </motion.div>
             </div>
         </React.Fragment >
     )
 }
-export default SectionWrapper(About(), "about");
+export default SectionWrapper(About());
